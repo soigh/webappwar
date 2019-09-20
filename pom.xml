@@ -45,16 +45,6 @@ Also show cases the 'Simple Logging Framework - slf4j'.</description>
 					<warName>mywebapp</warName>
 				</configuration>
 			</plugin>
-			<plugin>
-                         <groupId>org.sonatype.plugins</groupId>
-                         <artifactId>nexus-staging-maven-plugin</artifactId>
-                         <version>1.6.3</version>
-                         <extensions>true</extensions>
-                         <configuration>
-                          <serverId>NXRMOSS3.18.1-01</serverId>
-                          <nexusUrl>http://soi/nexus/</nexusUrl>
-                         </configuration>
-                        </plugin>
 			
 		</plugins>
 		<!-- shown as an example, second priority for the WAR name -->
@@ -111,13 +101,5 @@ Also show cases the 'Simple Logging Framework - slf4j'.</description>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-	<distributionManagement>
-         <snapshotRepository>
-          <id>NXRMOSS3.18.1-01</id>
-          <url>http://soi/nexus/repository/maven-snapshots/</url>
-         </snapshotRepository>
-        </distributionManagement>
-
 
 </project>
