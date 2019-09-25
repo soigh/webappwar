@@ -23,7 +23,7 @@ import com.denofprogramming.random.RandomGenerator;
 public class Config {
 
 	@Bean
-	public UrlBasedViewResolver setupViewResolver() {
+	public UrlBasedViewResolver setupViewResolver() 
 		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
